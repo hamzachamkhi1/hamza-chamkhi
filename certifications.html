@@ -1,0 +1,548 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Hamza Chamkhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Hamza Chamkhi</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link active">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="goals.html" class="nav-link">Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+  
+    <script>
+    // Inline certificate preview logic
+    document.querySelectorAll('.view-certificate-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Close any open previews
+            document.querySelectorAll('.certificate-preview').forEach(preview => {
+                if (preview !== this.parentElement.nextElementSibling) {
+                    preview.style.display = 'none';
+                    preview.innerHTML = '';
+                }
+            });
+            const preview = this.parentElement.nextElementSibling;
+            if (preview.style.display === 'block') {
+                preview.style.display = 'none';
+                preview.innerHTML = '';
+            } else {
+                const certPath = this.getAttribute('data-cert');
+                const certType = this.getAttribute('data-type');
+                if (certType === 'pdf') {
+                    preview.innerHTML = `<embed src="${certPath}" type="application/pdf" width="100%" height="600px" />`;
+                } else {
+                    preview.innerHTML = `<img src="${certPath}" alt="Certificate" style="max-width:100%;height:auto;" />`;
+                }
+                preview.style.display = 'block';
+            }
+        });
+    });
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Hamza Chamkhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Hamza Chamkhi</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link active">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="goals.html" class="nav-link">Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Certifications & Achievements</h1>
+            <p>Professional certifications and academic achievements that demonstrate my expertise and commitment to continuous learning</p>
+        </div>
+    </section>
+
+    <!-- Certifications Content -->
+    <section class="certifications-content">
+        <div class="container">
+            <!-- WTO E-Learning Certificate -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="wto-badge">
+                        <div class="wto-logo">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="wto-text">
+                            <span class="level">Level 1</span>
+                            <span class="program">WTO E-LEARNING</span>
+                            <span class="program">PROGRAMME</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>WTO E-Learning Certificate - Level 1</h2>
+                    <h3>Introduction to the WTO</h3>
+                    <p class="certification-description">
+                        Successfully completed the World Trade Organization's foundational course, demonstrating comprehensive understanding 
+                        of international trade principles, global business practices, and the role of the WTO in facilitating international commerce.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> World Trade Organization (WTO)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> May 27, 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span><strong>Language:</strong> English</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Official WTO Certification</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/Introduction_to_the_WTO.png" data-type="image">View Certificate</button>
+                        <a href="certificate/Introduction_to_the_WTO.png" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Letter of Achievement -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>Letter of Achievement</h2>
+                    <h3>Fleming College Toronto</h3>
+                    <p class="certification-description">
+                        Awarded for excellent academic performance in the Fall 2024 semester. Recognizes hard work, integrity, and academic excellence in Global Business Management.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span><strong>Institution:</strong> Fleming College Toronto</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> February 4, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span><strong>Signed by:</strong> Danzen Samaniego, Associate Dean</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/Letter of Achievement.png" data-type="image">View Certificate</button>
+                        <a href="certificate/Letter of Achievement.png" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- CompTIA Project+ Cert Prep 1: Project Basics -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>CompTIA Project+ Cert Prep 1: Project Basics</h2>
+                    <h3>LinkedIn Learning / CompTIA</h3>
+                    <p class="certification-description">
+                        Certificate of completion for foundational project management concepts, including project life cycle, roles, and best practices.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> CompTIA / LinkedIn Learning</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/CertificateOfCompletion_CompTIA Project PK0004 Cert Prep 1 Project Basics (1).pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/CertificateOfCompletion_CompTIA Project PK0004 Cert Prep 1 Project Basics (1).pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Market Research Qualitative -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>Market Research: Qualitative</h2>
+                    <h3>LinkedIn Learning</h3>
+                    <p class="certification-description">
+                        Certificate of completion for mastering qualitative market research methods, including interviews, focus groups, and data analysis.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> LinkedIn Learning</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/CertificateOfCompletion_Market Research Qualitative.pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/CertificateOfCompletion_Market Research Qualitative.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Excel for Accounting (unique) -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>Excel for Accounting</h2>
+                    <h3>LinkedIn Learning</h3>
+                    <p class="certification-description">
+                        Certificate of completion for mastering Excel skills for accounting, including formulas, functions, and financial analysis.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> LinkedIn Learning</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/CertificateOfCompletion_Excel for Accounting (1).pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/CertificateOfCompletion_Excel for Accounting (1).pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Excel Essential Training Microsoft 365 (unique) -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>Excel Essential Training (Microsoft 365)</h2>
+                    <h3>LinkedIn Learning</h3>
+                    <p class="certification-description">
+                        Certificate of completion for essential Excel skills in Microsoft 365, including data analysis, charts, and productivity tools.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> LinkedIn Learning</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> 2024</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/CertificateOfCompletion_Excel Essential Training Microsoft 365.pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/CertificateOfCompletion_Excel Essential Training Microsoft 365.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Python1 -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fab fa-python"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>Python Programming Certificate</h2>
+                    <h3>Course Completion</h3>
+                    <p class="certification-description">
+                        Certificate of completion for Python programming, covering core concepts, data structures, and practical coding exercises.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <span><strong>Issuing Organization:</strong> (See Certificate)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> (See Certificate)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/Python1.pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/Python1.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- 1_FCT-ELB Credit Record (unique) -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-award"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>FCT-ELB Credit Record</h2>
+                    <h3>Fleming College Toronto</h3>
+                    <p class="certification-description">
+                        Official credit record for academic achievement at Fleming College Toronto. Details of courses and credits earned.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span><strong>Institution:</strong> Fleming College Toronto</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> (See Certificate)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Official Credit Record</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/1_FCT-ELB Credit Record FC1027049 - 10341637 Hamza Chamkhi.pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/1_FCT-ELB Credit Record FC1027049 - 10341637 Hamza Chamkhi.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- 2_ELB Certificate of Completion (unique) -->
+            <div class="certification-card">
+                <div class="certification-badge">
+                    <div class="college-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-details">
+                    <h2>ELB Certificate of Completion</h2>
+                    <h3>Fleming College Toronto</h3>
+                    <p class="certification-description">
+                        Certificate of completion for ELB program at Fleming College Toronto. Recognizes successful completion of program requirements.
+                    </p>
+                    <div class="certification-info">
+                        <div class="info-item">
+                            <i class="fas fa-university"></i>
+                            <span><strong>Institution:</strong> Fleming College Toronto</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span><strong>Issue Date:</strong> (See Certificate)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <span><strong>Credential Type:</strong> Certificate of Completion</span>
+                        </div>
+                    </div>
+                    <div class="certification-actions">
+                        <button class="btn btn-primary view-certificate-btn" data-cert="certificate/2_ELB Certificate of Completion FC1027049 - 10341637 Hamza Chamkhi.pdf" data-type="pdf">View Certificate</button>
+                        <a href="certificate/2_ELB Certificate of Completion FC1027049 - 10341637 Hamza Chamkhi.pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download</a>
+                    </div>
+                    <div class="certificate-preview" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // Inline certificate preview logic
+    document.querySelectorAll('.view-certificate-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Close any open previews
+            document.querySelectorAll('.certificate-preview').forEach(preview => {
+                if (preview !== this.parentElement.nextElementSibling) {
+                    preview.style.display = 'none';
+                    preview.innerHTML = '';
+                }
+            });
+            const preview = this.parentElement.nextElementSibling;
+            if (preview.style.display === 'block') {
+                preview.style.display = 'none';
+                preview.innerHTML = '';
+            } else {
+                const certPath = this.getAttribute('data-cert');
+                const certType = this.getAttribute('data-type');
+                if (certType === 'pdf') {
+                    preview.innerHTML = `<embed src="${certPath}" type="application/pdf" width="100%" height="600px" />`;
+                } else {
+                    preview.innerHTML = `<img src="${certPath}" alt="Certificate" style="max-width:100%;height:auto;" />`;
+                }
+                preview.style.display = 'block';
+            }
+        });
+    });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hamza Chamkhi</h3>
+                    <p>Global Business & Technology Professional</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Software Development</li>
+                        <li>Global Business</li>
+                        <li>Data Analysis</li>
+                        <li>Supply Chain Management</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hamzachamkhi23@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +1 437-606-1623</p>
+                        <p><i class="fas fa-map-marker-alt"></i> North York, Toronto, ON</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hamza Chamkhi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> 20422f9 (Add image and certifications folders)
+</html> 

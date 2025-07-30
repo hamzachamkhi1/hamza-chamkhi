@@ -1,0 +1,586 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Hamza Chamkhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Hamza Chamkhi</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="goals.html" class="nav-link">Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Resume</h1>
+            <p>My professional experience, education, and qualifications</p>
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="resume-content">
+        <div class="container">
+            <!-- Contact Info -->
+            <div class="resume-header">
+                <div class="resume-name">
+                    <h2>Hamza Chamkhi</h2>
+                    <p class="title">Global Business & Technology Professional</p>
+                </div>
+                <div class="resume-contact">
+                    <p><i class="fas fa-envelope"></i> hamzachamkhi23@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 437-606-1623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> North York, Toronto, ON</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/hamza-chamkhi</p>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Driver Helper</h4>
+                        <span class="company">UPS Canada</span>
+                        <span class="date">Nov 2024 – Jan 2025</span>
+                    </div>
+                    <p class="location">Toronto, ON</p>
+                    <ul class="achievements">
+                        <li>Assisted with parcel deliveries and customer interaction during peak season</li>
+                        <li>Supported route efficiency and optimized delivery processes</li>
+                        <li>Maintained high customer satisfaction through professional service</li>
+                        <li>Collaborated effectively with drivers to ensure timely deliveries</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Software Development Intern</h4>
+                        <span class="company">Cercian Software Services</span>
+                        <span class="date">Jan – Apr 2024</span>
+                    </div>
+                    <p class="location">Tunisia</p>
+                    <ul class="achievements">
+                        <li>Developed procurement automation tools using Python, MySQL, and Tkinter</li>
+                        <li>Supported database design and inventory process improvements</li>
+                        <li>Collaborated with development team on software solutions</li>
+                        <li>Gained hands-on experience with enterprise software development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4>Postgraduate Certificate in Global Business Management</h4>
+                        <span class="date">Expected 2025</span>
+                    </div>
+                    <p class="institution">Fleming College, Toronto, ON</p>
+                    <p class="description">Comprehensive program covering international business, supply chain management, global market strategies, and cross-cultural business practices.</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4>Bachelor of Computer Science</h4>
+                        <span class="date">2023</span>
+                    </div>
+                    <p class="institution">Higher Institute of Computer Science (ISI), Tunisia</p>
+                    <p class="description">Focused on software development, algorithms, database management, web technologies, and computer systems.</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Databases & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Tkinter</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Enterprise Systems</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SAP HCM</span>
+                            <span class="skill-tag">ERP Systems</span>
+                            <span class="skill-tag">Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Skills Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-chart-line"></i> Business & Analytical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Operations & Logistics</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Inventory Control</span>
+                            <span class="skill-tag">Vendor Coordination</span>
+                            <span class="skill-tag">Supply Chain Management</span>
+                            <span class="skill-tag">Process Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Analysis & Management</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Business Strategy</span>
+                            <span class="skill-tag">Market Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-language"></i> Languages</h3>
+                <div class="languages-container">
+                    <div class="language-item">
+                        <span class="language">English</span>
+                        <span class="proficiency">Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language">French</span>
+                        <span class="proficiency">Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language">Arabic</span>
+                        <span class="proficiency">Native</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-trophy"></i> Certifications & Achievements</h3>
+                
+                <div class="achievement-item">
+                    <div class="achievement-header">
+                        <h4>WTO E-Learning Certificate - Level 1</h4>
+                        <span class="date">May 2024</span>
+                    </div>
+                    <p class="institution">World Trade Organization (WTO)</p>
+                    <p class="description">Successfully completed "Introduction to the WTO" course, demonstrating expertise in international trade principles and global business practices. Official certification from the World Trade Organization.</p>
+                    <div class="achievement-tags">
+                        <span class="achievement-tag">International Trade</span>
+                        <span class="achievement-tag">Global Business</span>
+                        <span class="achievement-tag">WTO Certification</span>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-header">
+                        <h4>Academic Excellence Award</h4>
+                        <span class="date">February 2025</span>
+                    </div>
+                    <p class="institution">Fleming College Toronto</p>
+                    <p class="description">Recognized for outstanding academic performance in the Fall 2024 semester. Letter of Achievement signed by Associate Dean Danzen Samaniego, acknowledging exceptional dedication and integrity in Global Business Management studies.</p>
+                    <div class="achievement-tags">
+                        <span class="achievement-tag">Academic Excellence</span>
+                        <span class="achievement-tag">Dean's Recognition</span>
+                        <span class="achievement-tag">Global Business Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="resume-download-section">
+                <div class="download-card">
+                    <h3>Download Full Resume</h3>
+                    <p>Get a complete PDF version of my resume for your records</p>
+                    <button class="btn btn-primary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Hamza Chamkhi</h3>
+                    <p>Global Business & Technology Professional</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/hamza-chamkhi" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hamzachamkhi23@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hamza Chamkhi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Hamza Chamkhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Hamza Chamkhi</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="goals.html" class="nav-link">Goals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Resume</h1>
+            <p>My professional experience, education, and qualifications</p>
+            <div class="header-actions">
+                <button class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="resume-content">
+        <div class="container">
+            <!-- Contact Info -->
+            <div class="resume-header">
+                <div class="resume-name">
+                    <h2>Hamza Chamkhi</h2>
+                    <p class="title">Global Business & Technology Professional</p>
+                </div>
+                <div class="resume-contact">
+                    <p><i class="fas fa-envelope"></i> hamzachamkhi23@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 437-606-1623</p>
+                    <p><i class="fas fa-map-marker-alt"></i> North York, Toronto, ON</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/hamza-chamkhi</p>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Driver Helper</h4>
+                        <span class="company">UPS Canada</span>
+                        <span class="date">Nov 2024 – Jan 2025</span>
+                    </div>
+                    <p class="location">Toronto, ON</p>
+                    <ul class="achievements">
+                        <li>Assisted with parcel deliveries and customer interaction during peak season</li>
+                        <li>Supported route efficiency and optimized delivery processes</li>
+                        <li>Maintained high customer satisfaction through professional service</li>
+                        <li>Collaborated effectively with drivers to ensure timely deliveries</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Software Development Intern</h4>
+                        <span class="company">Cercian Software Services</span>
+                        <span class="date">Jan – Apr 2024</span>
+                    </div>
+                    <p class="location">Tunisia</p>
+                    <ul class="achievements">
+                        <li>Developed procurement automation tools using Python, MySQL, and Tkinter</li>
+                        <li>Supported database design and inventory process improvements</li>
+                        <li>Collaborated with development team on software solutions</li>
+                        <li>Gained hands-on experience with enterprise software development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4>Postgraduate Certificate in Global Business Management</h4>
+                        <span class="date">Expected 2025</span>
+                    </div>
+                    <p class="institution">Fleming College, Toronto, ON</p>
+                    <p class="description">Comprehensive program covering international business, supply chain management, global market strategies, and cross-cultural business practices.</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4>Bachelor of Computer Science</h4>
+                        <span class="date">2023</span>
+                    </div>
+                    <p class="institution">Higher Institute of Computer Science (ISI), Tunisia</p>
+                    <p class="description">Focused on software development, algorithms, database management, web technologies, and computer systems.</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Databases & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Tkinter</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Enterprise Systems</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SAP HCM</span>
+                            <span class="skill-tag">ERP Systems</span>
+                            <span class="skill-tag">Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Skills Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-chart-line"></i> Business & Analytical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h4>Operations & Logistics</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Inventory Control</span>
+                            <span class="skill-tag">Vendor Coordination</span>
+                            <span class="skill-tag">Supply Chain Management</span>
+                            <span class="skill-tag">Process Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h4>Analysis & Management</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Business Strategy</span>
+                            <span class="skill-tag">Market Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-language"></i> Languages</h3>
+                <div class="languages-container">
+                    <div class="language-item">
+                        <span class="language">English</span>
+                        <span class="proficiency">Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language">French</span>
+                        <span class="proficiency">Fluent</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language">Arabic</span>
+                        <span class="proficiency">Native</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="resume-section">
+                <h3 class="section-title"><i class="fas fa-trophy"></i> Certifications & Achievements</h3>
+                
+                <div class="achievement-item">
+                    <div class="achievement-header">
+                        <h4>WTO E-Learning Certificate - Level 1</h4>
+                        <span class="date">May 2024</span>
+                    </div>
+                    <p class="institution">World Trade Organization (WTO)</p>
+                    <p class="description">Successfully completed "Introduction to the WTO" course, demonstrating expertise in international trade principles and global business practices. Official certification from the World Trade Organization.</p>
+                    <div class="achievement-tags">
+                        <span class="achievement-tag">International Trade</span>
+                        <span class="achievement-tag">Global Business</span>
+                        <span class="achievement-tag">WTO Certification</span>
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-header">
+                        <h4>Academic Excellence Award</h4>
+                        <span class="date">February 2025</span>
+                    </div>
+                    <p class="institution">Fleming College Toronto</p>
+                    <p class="description">Recognized for outstanding academic performance in the Fall 2024 semester. Letter of Achievement signed by Associate Dean Danzen Samaniego, acknowledging exceptional dedication and integrity in Global Business Management studies.</p>
+                    <div class="achievement-tags">
+                        <span class="achievement-tag">Academic Excellence</span>
+                        <span class="achievement-tag">Dean's Recognition</span>
+                        <span class="achievement-tag">Global Business Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="resume-download-section">
+                <div class="download-card">
+                    <h3>Download Full Resume</h3>
+                    <p>Get a complete PDF version of my resume for your records</p>
+                    <button class="btn btn-primary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Hamza Chamkhi</h3>
+                    <p>Global Business & Technology Professional</p>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">About</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/hamza-chamkhi" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:hamzachamkhi23@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hamza Chamkhi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+>>>>>>> 20422f9 (Add image and certifications folders)
+</html> 
